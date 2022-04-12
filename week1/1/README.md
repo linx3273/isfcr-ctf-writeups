@@ -107,7 +107,7 @@ using `q2` and `p2` , `d2` can be found and using this we can decipher `c2` to o
 # Flag
 `isfcr{qu4dr4t1c_3quation5_f0r_th333_w1n}`
 
-# References
+# Tools/References
 [Youtube](https://www.youtube.com/watch?v=vf1z7GlG6Qo)\
 [cryptobook.nakov.com](https://cryptobook.nakov.com/asymmetric-key-ciphers/the-rsa-cryptosystem-concepts)\
 [Wikipedia](https://en.wikipedia.org/wiki/RSA_(cryptosystem))
