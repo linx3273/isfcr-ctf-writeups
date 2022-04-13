@@ -11,9 +11,16 @@ function Red
     process { Write-Host $_ -ForegroundColor Red }
 }
 
+function Yellow
+{
+    process { Write-Host $_ -ForegroundColor Yellow }
+}
 
 
+# opens directory in which the script is located
 cd $PSScriptRoot
+Write-Output "Working Dir:" | Green
+Write-Output $PSScriptRoot | Yellow
 
 Write-Output "Installing virtualenv" | Green
 pip install virtualenv
@@ -28,4 +35,9 @@ Write-Output "Installing dependencies" | Green
 pip install -r .\requirements.txt
 
 Write-Output "Creating activate.ps1" | Green
+# to acticvate the virtualenv using autofill instead of entering the directory path given below
 ".\.venv\Scripts\activate" > activate.ps1
+# do deactivate the virtualenv just enter deactivate in the terminal
+
+Write-Output "Done" | Green
+Write-Output "Use '.\activate.ps1' to enable virtualenv in future uses" | Green
